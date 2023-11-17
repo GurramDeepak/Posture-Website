@@ -1,0 +1,152 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Jost&display=swap" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Jost|Mukta&display=swap" rel="stylesheet">
+<style>
+
+#main{
+  background-image:url('https://i.pinimg.com/474x/68/18/94/681894ec63da612dccf313284d91e556--dark-purple-purple-haze.jpg');
+  
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display:inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#c4e60945;
+  height:400px;
+}
+
+div{
+  background-color:#1b1b32d1;
+  width:550px;
+  border-radius:5px;
+  color:white;
+  font-family: 'Jost', sans-serif;
+  padding:40px;
+  margin-bottom:150px;
+  
+ }
+label{
+  font-family: 'Jost', sans-serif;
+  font-size:20px;
+  color:white;
+  
+}
+
+#name,#age,#email,textarea{
+  padding:5px;
+  width:97%;
+  border-radius:5px;
+  
+}
+
+#title,p{
+  text-align:center;
+  color:white;
+  
+  
+}
+p{
+  font-family: 'Jost', sans-serif;
+font-family: 'Mukta', sans-serif;
+}
+select{
+   padding:5px;
+  width:100%;
+  border-radius:5px;
+   margin-top:10px;
+  margin-bottom:10px;
+  
+}
+#submit{
+  padding:5px;
+  width:100%;
+  height:30px;
+  border-radius:5px;
+  background-color:	#46b946;
+  border:none;
+  margin-top:10px;
+  
+}
+
+</style>
+</head>
+<body id="main">
+  <h1 id="title">FEEDBACK FORM</h1>
+<p id="description">Thank you for taking the time to help us</p>
+  
+  <div>
+    <form id="survey-form" action="connect.php" method="post">
+       <label id="name-label">NAME</label><br>
+      <input id="name" type="text" placeholder="Enter name" name="Name"><br>
+      
+       <label id="email-label">Email</label><br>
+      <input id="email" type="email" placeholder="Enter email" name="email"><br>
+      
+      <label id="number-label">Age</label><br>
+      <input id="age" type="number" placeholder="Enter age" min="18" max="100" name="age"><br>
+	  
+<LABEL>PLEASE SELECT YOUR GENDER:</LABEL><BR>
+  <input type="radio" id="male"  value="male" name="gender">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female"  value="female" name="gender">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other"  value="other" name="gender">
+  <label for="other">Other</label>
+  <BR>
+      
+      <label>Which option best describes your current role?</label><br>
+      <select id="dropdown" name="role" >
+        <option disabled >Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full time Learner</option> 
+        <option>Prefer Not To Say</option>
+        <option>Other</option>
+        </select><br>
+      
+      <label>Would you recommend  to a friend?</label><br>
+      <input type="radio" name="friend" value="Definetely" name="rec">Definetely<br>
+      <input type="radio" name="friend" value="Maybe" name="rec">May be<br>
+      <input type="radio"name="friend" value="Not sure" name="rec">Not Sure<br>
+      
+      <label>Will you do work out daily?</label><br>
+      <select id="dropdown2" name="daily">
+        <option disabled >Select An option</option>
+        <option>yes</option>
+        <option>no</option>
+        <option>sometime</option>
+        </select><br>
+      
+      
+      
+      <label>YOUR FACEING ANY OF THE PROBLEM IN DAILY LIFE?</label><br>
+      <input type="checkbox"  value="BACKPAIN" name="problem">BACKPAIN<br>
+      <input type="checkbox"  value="SPINAL DYSFUNCTION" name="problem">SPINAL DYSFUNCTION<br>
+      <input type="checkbox"  value="JOINT DEGENERATION" name="problem">JOINT DEGENERATION<br>
+      <input type="checkbox"  value="ROUNDED SHOUDERS" name="problem">ROUNDED SHOUDERS<br>
+      <input type="checkbox"  value="POTBELLY" name="">POTBELLY<br>
+	  OTHER:<input id="PROBLEM" type="text" placeholder="YOUR PROBLEM" name="other"><br>
+      
+      <label>Any comments or suggestions?</label><br>
+      <textarea maxlength="1000" rows="4" cols="50" id="area" placeholder="Enter Your Comment Here" name="suggest"></textarea><br>
+      
+      <input id="submit" type="submit"
+           value="submit"  onclick="myFunction()">
+      
+   </form>
+    
+    
+  </div>
+<script>
+function myFunction() 
+ {
+  alert("thankyou your REGISTRATION COMPLETED");
+}
+</script>
+  
+</body>
+</html>

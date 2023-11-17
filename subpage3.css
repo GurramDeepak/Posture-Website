@@ -1,0 +1,78 @@
+body{
+font-size:15px;
+font-family:arial;
+background:whitesmoke;
+}
+header{
+position: fixed;
+border:3px solid black;
+background:black;
+left:0;
+top:0;
+right:0;
+color:white;
+}
+ul{
+float:right;
+list-style-type:none;
+padding-left:810px;
+padding:4px;
+font-size:15px;
+}
+ul li{
+display: inline-block;
+font-weight:bold;
+font-size:14px;
+cursor: pointer;
+border-radius:8px;
+border:solid double blue;
+border-style:outset;
+padding:2px;
+}
+ul li a{
+text-decoration:none;
+color:white;
+}
+.logo img{
+    float: left;
+    width: 56px;
+    height: 42px;
+    margin: 7px;
+}
+.backgroundimg img{
+    margin-top: 8px;
+    margin-left: -8px;
+    width: 101%;
+    margin-right: 3px;
+}
+
+.section1 img{
+height:65%;
+width:40%;
+}
+.section2 {
+     float: right;
+    font-size: 15px;
+    margin-right: 413px;
+    line-height: 45px;
+}
+.section3 {
+ float: right;
+    font-size: 15px;
+    margin-right: 252px;
+    line-height: 45px;
+}
+.section4 {
+ float: right;
+    font-size: 15px;
+    margin-right: 127px;
+    line-height: 46px;
+}
+
+.section5 {
+ float: right;
+    font-size: 15px;
+    margin-right: 409px;
+    line-height: 41px;
+}
+
